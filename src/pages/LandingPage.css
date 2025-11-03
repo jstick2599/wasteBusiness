@@ -106,3 +106,56 @@ html, body {
   height: 100%;
   background-color: #B4D9EF; /* optional */
 }
+/* input{
+    width:27vw; 
+    background-color: hsl(202, 65%, 82%);
+    border-radius: 20px;
+    height:100px;
+    font-size: 36px;
+    
+} */
+input::placeholder,
+textarea::placeholder {
+  font-weight:100;
+}
+#submitButton{
+    border-color:red;
+    display: block; /* Important for margin: auto to work */
+    margin: 0 auto;
+    width:15vw
+}
+.formDescription{
+    text-align: center;
+    padding-left:5%;
+    padding-right:5%;
+    font-size: 2rem;
+}
+.fileUploadContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+/* Hide the default file input */
+#fileInput {
+  display: none;
+}
+
+/* Style the label to look like a button */
+.uploadButton, input {
+  background-color: #ffffff;
+  color: black;
+  border-color: white;
+  text-align: center;
+  padding: 2% 3%;
+  border-radius: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.uploadButton:hover {
+  background-color: #e6f4ff;
+  transform: scale(1.03);
+}
